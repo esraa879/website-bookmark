@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+         
+  <div class="container">
+    <div id="alertName" class="alert alert-danger d-none">Enter a valid website name and url !!!!</div>
+    <h1 class="main-title">Bookmarker</h1>
+    <div class="container bg-success-subtle">
+      <h2 class="form-title">Bookmark your favorite sites</h2>
+      <div class="input-group">
+        <label for="siteName"><i class="fa-solid fa-floppy-disk me-1"></i>Site Name</label>
+        <input type="text" id="siteName" placeholder="Bookmark Name" />
+      </div>
+      <div class="input-group">
+        <label for="siteURL"><i class="fa-solid fa-paperclip me-1"></i>Site URL</label>
+        <input type="url" id="siteURL" placeholder="Website URL" />
+      </div>
+      <button onclick="addSite()" class="btn btn-outline-danger" id="submitBtn">Submit</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody  id="tableBody">
+
+      </tbody>
+    </table>
+  </div>
+</body>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
